@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https //fonts.googleapis.com/css family=roboto:wght@300;400;500;600&display=swap"
+    />
+    <title>Employee payroll Form</title>
+    <link rel="stylesheet" href="Newstyle.css" />
+  </head>
+  <body>
+    <header class="header-content header">
+      <!-- UC1 employee logo  -->
+      <div class="logo-content">
+        <img src="image\img1.jpg" alt="image" width="4%" />
+        <div>
+          <span class="emp-text">EMPLOYEE</span><br />
+          <span class="emp-text emp-payroll">PAYROLL</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-content">
+      <!-- uc2 emp payroll with header  -->
+      <div class="header-content">
+        <div class="emp-details-text">
+          Employee Details
+          <div class="emp-count">10</div>
+        </div>
+        <a href="Employee.html" class="add-button">
+          <img src="" alt="" width="15%" />+Add user</a
+        >
+      </div>
+      <!-- header content  -->
+
+      <!-- Uc3  Employee details in tabular Form  -->
+      <div class="table-main">
+        <!--Table Area-->
+        <table id="display" class="table">
+          <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Department</th>
+            <th>Salary</th>
+            <th>Start Date</th>
+            <th>Actions</th>
+          </tr>
+          <tr>
+            <td class="profile">
+              <img class="profile" alt="" src="image\img7.png" width="45px" />
+            </td>
+            <td>sanjay sah</td>
+            <td>Male</td>
+            <td>
+              <div class="dept-label">HR</div>
+              <div class="dept-label">Finance</div>
+            </td>
+            <td>4000000</td>
+            <td>20 February 2022</td>
+            <td>
+              <img
+                name="1"
+                onclick="remove(this)"
+                alt="delete"
+                src="image\delete.png"
+                width="15%"
+              />
+              <img
+                name="1"
+                alt="edit"
+                onclick="update(this)"
+                src="image\edit.png"
+                width="15%"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!--Table main-->
+    </div>
+    <!--Main content-->
+    <script src="new_home.js"></script>
+    <script src="utility.js"></script>
+    <script src="site_property.js"></script>
+    <script src="empPayroll.js"></script>
+  </body>
+</html>
